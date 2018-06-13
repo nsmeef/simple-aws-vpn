@@ -1,28 +1,28 @@
 Simple AWS VPN
 ------------------------------------------
 
-This project aims to allow you to simply create a secure VPN within the AWS Region of your choice.
+This project aims to allow you to simply create a secure VPN within a AWS region of your choice.
 
 There are a few prerequisites -
 
-* AWS Account with default VPC
-* AWS Credentials
 * Docker
 * Linux/OSX
+* AWS Account with default VPC
+* AWS Credentials w/ adaquete permissions
 
 ### Deployment
 
-To deploy a VPN please ensure you have your AWS credentials set as environment variables. The default region is set to `eu-west-2` and you can override this by specifying `AWS_DEFAULT_REGION` in your environment variables.
+To create a VPN please ensure you have your AWS credentials set as environment variables. The default region is set to `eu-west-2` and you can override this by specifying `AWS_DEFAULT_REGION` in your environment variables.
 
 You can find the available regions specified [here.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions)
 
-Then run `./create-vpn.sh`.
+With the credentials available in your environment you can then run `./create-vpn.sh`.
 
-All details relative to accessing the VPN will be echo to stdout once deployment is complete.
+The details to login to your server will be outputted upon successful deployment.
 
 ### Teardown
 
-To teardown the instance run `./delete-vpn.sh` with AWS credentials specified in your environment variables.
+With the credentials available in your environment you can then run `./delete-vpn.sh` to delete your VPN.
 
 ### Notes
 
