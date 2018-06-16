@@ -1,5 +1,5 @@
 ---
-Username: '{{ env `UNAME` }}'
-VPNPassword: '{{ env `PWD` }}'
+Username: '{{ env `USERNAME` }}'
+VPNPassword: '{{ env `PASSWORD` }}'
 VPNPhrase: '{{ env `PHRASE` }}'
 Size: High.Speed.VPN-t2.medium
